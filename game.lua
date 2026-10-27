@@ -13,6 +13,8 @@ require "overw"
 require "ui"
 require "particles"
 
+if music then music.loop("music/trilha") end
+
 function make_game()
     local frame = 0
     local map = make_map()
