@@ -134,17 +134,35 @@ kStages = {
         display_name = "X 2-2",
         map_name     = "maps.stages.w2s2"
     },
+
+    --------------------
+
     {
         map_location = { x = 31, y = 36 },
-        player_start = { x = 7, y = 14 },
+        player_start = { x = 4, y = 16 },
         looking_back = false,
-        bg_up        = Sprites.tilemap.clouds,
-        bg_down      = Sprites.tilemap.ocean,
+        bg_up        = Sprites.tilemap.snowy_b_top,
+        bg_down      = Sprites.tilemap.snowy_b_bot,
         cherries     = 2,
-        bg_tint      = kColors.blue_light,
+        bg_tint      = Palette.hex(0x52294a),
         display_name = "X 1-1",
         map_name     = "maps.stages.w2s3"
     },
+
+
+    --     {
+    --     map_location = { x = 31, y = 36 },
+    --     player_start = { x = 7, y = 14 },
+    --     looking_back = false,
+    --     bg_up        = Sprites.tilemap.clouds,
+    --     bg_down      = Sprites.tilemap.ocean,
+    --     cherries     = 2,
+    --     bg_tint      = kColors.blue_light,
+    --     display_name = "X 1-1",
+    --     map_name     = "maps.stages.w2s3"
+    -- },
+
+    -------------------------
     {
         map_location = { x = 35, y = 36 },
         player_start = { x = 7, y = 14 },
