@@ -139,7 +139,7 @@ kStages = {
 
     {
         map_location = { x = 31, y = 36 },
-        player_start = { x = 4, y = 16 },
+        player_start = { x = 3, y = 16 },
         looking_back = false,
         bg_up        = Sprites.tilemap.snowy_b_top,
         bg_down      = Sprites.tilemap.snowy_b_bot,
