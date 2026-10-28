@@ -148,8 +148,6 @@ kStages = {
         display_name = "X 1-1",
         map_name     = "maps.stages.w2s3"
     },
-
-
     --     {
     --     map_location = { x = 31, y = 36 },
     --     player_start = { x = 7, y = 14 },
@@ -161,7 +159,6 @@ kStages = {
     --     display_name = "X 1-1",
     --     map_name     = "maps.stages.w2s3"
     -- },
-
     -------------------------
     {
         map_location = { x = 35, y = 36 },
