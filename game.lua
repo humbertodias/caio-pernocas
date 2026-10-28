@@ -12,8 +12,7 @@ require "utils"
 require "overw"
 require "ui"
 require "particles"
-
-if music then music.loop("music/tema") end
+require "soundtrack"
 
 function make_game()
     local frame = 0
@@ -78,11 +77,13 @@ local function draw()
 
     if Scene == nil then
         Scene = make_overworld()
+        play_soundtrack(Scene)
     end
 
     if Scene.is_finished() == true then
         Frame = 0
         Scene = Scene.name() == "game" and make_overworld() or make_game()
+        play_soundtrack(Scene)
         collectgarbage("collect")
     end
 
