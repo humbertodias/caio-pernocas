@@ -22,7 +22,7 @@ local function make_snow_particle(x, y)
             local size = 1 + (life / 140 * 3)
             ui.circfill(cx, cy, size, color)
         end,
-        alive = function() 
+        alive = function()
             return life > 0
         end
     }
@@ -39,7 +39,7 @@ local function make_smoke_particle(x, y)
         draw = function(frame)
             ui.circfill(cx // 1, cy // 1, math.floor(life + 0.5), 60)
         end,
-        alive = function() 
+        alive = function()
             return life > 0
         end
     }
@@ -58,7 +58,7 @@ local particles_factories = {
 
 function make_particles()
     local particles = {}
-    
+
     local function add_particle(x, y, type)
         if #particles < particles_max then
             table.insert(particles, particles_factories[type](x, y))
@@ -78,14 +78,14 @@ function make_particles()
     local function draw(frame)
 
         ui.fillp(
-            0b10101010,
-            0b01010101,
-            0b10101010,
-            0b01010101,
-            0b10101010,
-            0b01010101,
-            0b10101010,
-            0b01010101
+            0xAA,
+            0x55,
+            0xAA,
+            0x55,
+            0xAA,
+            0x55,
+            0xAA,
+            0x55
         )
 
         for _, p in pairs(particles) do

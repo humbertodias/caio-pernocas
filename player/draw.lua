@@ -11,11 +11,11 @@ function draw_player(ctx, frame, camera)
     end
 
     local x, y = math.floor(ctx.position.x + 0.5), math.floor(ctx.position.y + 0.5)
-    
+
     if ctx.points ~= ctx.total_points then
         ui.spr(ctx.tileset, x, y, ctx.looking_back, false)
-    end 
-    
+    end
+
     -- Check if player is below screen (death condition)
     local camx, camy = camera.getxy()
     if y - camy > 270 then ctx.should_reset = true end
@@ -36,14 +36,14 @@ function overlay_frame_player(ctx, frame, camera)
 
         ctx.win = math.max(20, math.min(480, ctx.win + (480 - ctx.win) / 40))
         ui.fillp(
-            0b10101010,
-            0b01010101,
-            0b10101010,
-            0b01010101,
-            0b10101010,
-            0b01010101,
-            0b10101010,
-            0b01010101
+            0xAA,
+            0x55,
+            0xAA,
+            0x55,
+            0xAA,
+            0x55,
+            0xAA,
+            0x55
         )
 
         ui.circfill(fx + 10, fy + 10, math.min(80, ctx.win // 3), kColors.purple_dark)
