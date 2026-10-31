@@ -1,6 +1,6 @@
 # Caio Pernocas
 
-Versões: [web](https://lupi-org-br.github.io/caio-pernocas/) | [desktop](https://github.com/lupi-org-br/caio-pernocas/releases/latest/download/caio-pernocas.lupi)
+Versões: [web](https://humbertodias.github.io/caio-pernocas/) | [desktop](https://github.com/humbertodias/caio-pernocas/releases/latest/download/caio-pernocas.lupi)
 
 ```sh
 lupinho caio-pernocas.lupi
